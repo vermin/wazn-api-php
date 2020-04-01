@@ -2,20 +2,20 @@
 
 [`src/daemonRPC.php`](https://github.com/vermin/wazn-api-php/tree/dev/src/daemonRPC.php)
 
-A class for making calls to `waznd` RPC API using PHP.
+A class for making calls to a WAZN daemon's RPC API using PHP
 
 Parameters:
 
- - `$host <String>` waznd port *(optional)*
- - `$port <nNmber>` waznd protocol (*eg.* 'http') *(optional)*
- - `$protocol <String>` waznd IP hostname *(optional)*
- - `$user <String>` waznd RPC username *(optional)*
- - `$password <String>` waznd RPC passphrase *(optional)*
+ - `$host <String>` WAZN daemon port *(optional)*
+ - `$port <nNmber>` WAZN daemon protocol (*eg.* 'http') *(optional)*
+ - `$protocol <String>` WAZN daemon IP hostname *(optional)*
+ - `$user <String>` WAZN daemon RPC username *(optional)*
+ - `$password <String>` WAZN daemon RPC passphrase *(optional)*
 
 Parameters can also be passed in as an associative array (object/dictionary,) as in:
 
 ```php
-$daemonRPC = new daemonRPC(['host' => '127.0.0.1', 'port' => 11787])
+$daemonRPC = new daemonRPC(['host' => '127.0.0.1', 'port' => 28081])
 ```
 
 If an object is used to provide parameters (as above,) parameters can be declared in any order.

@@ -14,24 +14,24 @@ $on_getblockhash = $daemonRPC->on_getblockhash(50000);
 $getlastblockheader = $daemonRPC->getlastblockheader();
 $get_connections = $daemonRPC->get_connections();
 $get_info = $daemonRPC->get_info();
-$hardfork_info = $daemonRPC->hardfork_info();
+// $hardfork_info = $daemonRPC->hardfork_info();
 // $setbans = $daemonRPC->setbans('8.8.8.8');
 // $getbans = $daemonRPC->getbans();
 
-require_once('src/walletRPC.php');
+//require_once('src/walletRPC.php');
 
-$walletRPC = new walletRPC('127.0.0.1', 11789); // Change to match your wallet (wazn-wallet-rpc) IP address and port; 11789 is the customary port for mainnet.
-$create_wallet = $walletRPC->create_wallet('wazn_wallet', ''); // Creates a new wallet named wazn_wallet with no passphrase.  Comment this line and edit the next line to use your own wallet
-$open_wallet = $walletRPC->open_wallet('wazn_wallet', '');
-$get_address = $walletRPC->get_address();
-$get_accounts = $walletRPC->get_accounts();
-$get_balance = $walletRPC->get_balance();
-// $create_address = $walletRPC->create_address(0, 'This is an example subaddress label'); // Create a subaddress on account 0
-// $tag_accounts = $walletRPC->tag_accounts([0], 'This is an example account tag');
-// $get_height = $walletRPC->get_height();
-// $get_transfers = $walletRPC->get_transfers('in', true);
-// $incoming_transfers = $walletRPC->incoming_transfers('all');
-// $mnemonic = $walletRPC->mnemonic();
+//$walletRPC = new walletRPC('127.0.0.1', 11789); // Change to match your wallet (wazn-wallet-rpc) IP address and port; 11789 is the customary port for mainnet.
+//$create_wallet = $walletRPC->create_wallet('wazn_wallet', ''); // Creates a new wallet named wazn_wallet with no passphrase.  Comment this line and edit the next line to use your own wallet
+//$open_wallet = $walletRPC->open_wallet('wazn_wallet', '');
+//$get_address = $walletRPC->get_address();
+//$get_accounts = $walletRPC->get_accounts();
+//$get_balance = $walletRPC->get_balance();
+//$create_address = $walletRPC->create_address(0, 'This is an example subaddress label'); // Create a subaddress on account 0
+//$tag_accounts = $walletRPC->tag_accounts([0], 'This is an example account tag');
+//$get_height = $walletRPC->get_height();
+//$get_transfers = $walletRPC->get_transfers('in', true);
+//$incoming_transfers = $walletRPC->incoming_transfers('all');
+//$mnemonic = $walletRPC->mnemonic();
 
 ?>
 <html>
@@ -46,6 +46,14 @@ $get_balance = $walletRPC->get_balance();
     <h2><tt></tt>daemonRPC</h2>
     <p><i>Note: not all methods shown, nor all results from each method.</i></p>
     <dl>
+      <dt><tt>get_info()</tt></dt>
+      <dd>
+        <p>WAZN Network: <tt><?php echo $get_info['nettype']; ?></tt></p>
+        <p>White Peers: <tt><?php echo $get_info['white_peerlist_size']; ?></tt></p>
+        <p>Grey Peers: <tt><?php echo $get_info['grey_peerlist_size']; ?></tt></p>
+        <p>Difficulty: <tt><?php echo $get_info['difficulty']; ?></tt></p>
+        <p>Cumulative difficulty: <tt><?php echo $get_info['cumulative_difficulty']; ?></tt></p>
+      </dd>
       <dt><tt>getblockcount()</tt></dt>
       <dd>
         <p>Status: <tt><?php echo $getblockcount['status']; ?></tt></p>
@@ -64,40 +72,6 @@ $get_balance = $walletRPC->get_balance();
       <dd>
         <p>Connections: <?php echo count($get_connections['connections']); ?></p>
         <?php foreach ($get_connections['connections'] as $peer) { echo '<p><tt>' . $peer['address'] . ' (' . ( $peer['height'] == $getblockcount['count'] ? 'synced' : ( $peer['height'] > $getblockcount['count'] ? 'ahead; syncing' : 'behind; syncing') ). ')</tt></p>'; } ?>
-      </dd>
-      <dt><tt>get_info()</tt></dt>
-      <dd>
-        <p>Difficulty: <tt><?php echo $get_info['difficulty']; ?></tt></p>
-        <p>Cumulative difficulty: <tt><?php echo $get_info['cumulative_difficulty']; ?></tt></p>
-      </dd>
-    </dl>
-
-    <h2><tt></tt>walletRPC</h2>
-    <p><i>Note: not all methods shown, nor all results from each method.</i></p>
-    <dl>
-      <!--
-      <dt><tt>get_address()</tt></dt>
-      <dd>
-        <?php foreach ($get_address['addresses'] as $account) { echo '<p>' . $account['label'] . ': <tt>' . $account['address'] . '</tt></p>'; } ?>
-      </dd>
-      -->
-      <dt><tt>get_accounts()</tt></dt>
-      <dd>
-        <p>Accounts: <?php echo count($get_accounts['subaddress_accounts']); ?></p>
-        <?php
-          foreach ($get_accounts['subaddress_accounts'] as $account) {
-            echo '<p>Account ' . $account['account_index'] . ': <tt>' . $account['base_address'] . '</tt><br />';
-            echo 'Balance: <tt>' . $account['balance'] / pow(10, 12) . '</tt> (<tt>' . $account['unlocked_balance'] / pow(10, 12) . '</tt> unlocked)<br />';
-            echo ( $account['label'] ) ? 'Label: <tt>' . $account['label'] . '</tt><br />' : '';
-            echo ( $account['tag'] ) ? 'Tag: <tt>' . $account['tag'] . '</tt><br />' : '';
-            echo '</p>';
-          }
-        ?>
-      </dd>
-      <dt><tt>get_balance()</tt></dt>
-      <dd>
-        <p>Balance: <tt><?php echo $get_balance['balance'] / pow(10, 12); ?></tt></p>
-        <p>Unlocked balance: <tt><?php echo $get_balance['unlocked_balance'] / pow(10, 12); ?></tt></p>
       </dd>
     </dl>
   </body>

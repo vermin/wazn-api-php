@@ -1,6 +1,6 @@
-# WAZN API PHP Documentation
+# WAZNPHP documentation
 
-This document lists the WAZN API PHP classes and their methods.  More detailed documentation (including parameters and their types and return formats and examples) can be found on each class' page.
+This document lists the WAZNPHP classes and their methods.  More detailed documentation (including parameters and their types and return formats and examples) can be found on each class' page.
 
 ### Classes
 

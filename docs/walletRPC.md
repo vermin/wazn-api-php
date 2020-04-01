@@ -2,7 +2,7 @@
 
 [`src/walletRPC.php`](https://github.com/vermin/wazn-api-php/tree/dev/src/walletRPC.php)
 
-A class for making calls to `wazn-wallet-rpc` RPC API using PHP.
+A class for making calls to wazn-wallet-rpc using PHP
 
 Parameters:
 
