@@ -1603,7 +1603,7 @@ class walletRPC
    * @return none
    *
    */
-  public function create_wallet($filename = 'waznapi', $password = null, $language = 'English')
+  public function create_wallet($filename = 'wazn_wallet', $password = null, $language = 'English')
   {
     $params = array('filename' => $filename, 'password' => $password, 'language' => $language);
     return $this->_run('create_wallet', $params);
@@ -1619,7 +1619,7 @@ class walletRPC
    * @return none
    *
    */
-  public function open_wallet($filename = 'waznapi', $password = null)
+  public function open_wallet($filename = 'wazn_wallet', $password = null)
   {
     $params = array('filename' => $filename, 'password' => $password);
     return $this->_run('open_wallet', $params);
