@@ -931,7 +931,7 @@ Return: `<Object>`
    "address": "WaznPw2YaCNaPT2rqdtQUpTa8Hw2sRrLq72bga53eHDEfEHfMUfca2W2kFBUqQm51gexz5BNjMARLHEqGtjgLLWE2XXxyvZJDs
    "amount": 10,
    "payment_id": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
-   "recipient_name": "WAZN Project donation address",
+   "recipient_name": "Wazn Project donation address",
    "tx_description": "Testing out the make_uri function"
  }
 }
@@ -1123,7 +1123,7 @@ Return: `jsonRPCClient`
 Alias: `getClient`
 
 Using work from:
- - CryptoChangements [WAZN_RPC] (<bW9uZXJv@gmail.com>) (https://github.com/cryptochangements34)
- - Serhack [WAZN Integrations] (<nico@serhack.me>) (https://serhack.me)
+ - CryptoChangements [Wazn_RPC] (<bW9uZXJv@gmail.com>) (https://github.com/cryptochangements34)
+ - Serhack [Wazn Integrations] (<nico@serhack.me>) (https://serhack.me)
  - TheKoziTwo [xmr-integration] (<thekozitwo@gmail.com>)
  - Kacper Rowinski [jsonRPCClient] (<krowinski@implix.com>)

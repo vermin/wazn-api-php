@@ -3,7 +3,7 @@
  *
  * wazn-api-php/daemonRPC
  *
- * A class for making calls to a WAZN daemon's RPC API using PHP
+ * A class for making calls to a Wazn daemon's RPC API using PHP
  * https://github.com/vermin/wazn-api-php
  *
  *
@@ -35,13 +35,13 @@ class daemonRPC
 
   /**
    *
-   * Start a connection with the the WAZN daemon (waznd)
+   * Start a connection with the the Wazn daemon (waznd)
    *
-   * @param  string  $host      WAZN daemon IP hostname            (optional)
-   * @param  int     $port      WAZN daemon port                   (optional)
-   * @param  string  $protocol  WAZN daemon protocol (eg. 'http')  (optional)
-   * @param  string  $user      WAZN daemon RPC username           (optional)
-   * @param  string  $password  WAZN daemon RPC passphrase         (optional)
+   * @param  string  $host      Wazn daemon IP hostname            (optional)
+   * @param  int     $port      Wazn daemon port                   (optional)
+   * @param  string  $protocol  Wazn daemon protocol (eg. 'http')  (optional)
+   * @param  string  $user      Wazn daemon RPC username           (optional)
+   * @param  string  $password  Wazn daemon RPC passphrase         (optional)
    *
    */
   function __construct($host = '127.0.0.1', $port = 11787, $protocol = 'http', $user = null, $password = null)

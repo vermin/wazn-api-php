@@ -1,13 +1,13 @@
 {
     "name": "vermin/wazn-api-php",
-    "description": "A WAZN Library written in PHP",
-    "keywords": ["WAZN", "wazn", "waznd", "wazn-wallet-rpc", "cryptonote", "JSONRPC", "JSON-RPC", "cryptocurrency"],
+    "description": "A Wazn Library written in PHP",
+    "keywords": ["Wazn", "wazn", "waznd", "wazn-wallet-rpc", "cryptonote", "JSONRPC", "JSON-RPC", "cryptocurrency"],
     "homepage": "https://github.com/vermin/wazn-api-php",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Project WAZN",
+            "name": "Project Wazn",
             "email": "info@wazn.io"
         }
     ],

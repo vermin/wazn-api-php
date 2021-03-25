@@ -212,12 +212,12 @@
         }
 
         /*
-         * Create a valid base58 encoded WAZN address from public keys
+         * Create a valid base58 encoded Wazn address from public keys
          *
          * @param string Public spend key
          * @param string Public view key
          *
-         * @return string Base58 encoded WAZN address
+         * @return string Base58 encoded Wazn address
          */
     public function encode_address($pSpendKey, $pViewKey)
     {
@@ -241,9 +241,9 @@
     }
 
     /*
-         * Decode a base58 encoded WAZN address
+         * Decode a base58 encoded Wazn address
          *
-         * @param string A base58 encoded WAZN address
+         * @param string A base58 encoded Wazn address
          *
          * @return array An array containing the Address network byte, public spend key, and public view key
          */
@@ -282,11 +282,11 @@
         }
 
         /*
-         * Generate a WAZN address from seed
+         * Generate a Wazn address from seed
          *
          * @param string Hex string to use as seed
          *
-         * @return string A base58 encoded WAZN address
+         * @return string A base58 encoded Wazn address
          */
     public function address_from_seed($hex_seed)
     {

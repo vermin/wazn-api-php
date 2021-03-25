@@ -382,8 +382,8 @@ Return: `<Object>`
 
 
 Using work from:
- - CryptoChangements [WAZN_RPC] (<bW9uZXJv@gmail.com>) (https://github.com/cryptochangements34)
- - Serhack [WAZN Integrations] (<nico@serhack.me>) (https://serhack.me)
+ - CryptoChangements [Wazn_RPC] (<bW9uZXJv@gmail.com>) (https://github.com/cryptochangements34)
+ - Serhack [Wazn Integrations] (<nico@serhack.me>) (https://serhack.me)
  - TheKoziTwo [xmr-integration] (<thekozitwo@gmail.com>)
  - Andrew LeCody [EasyBitcoin-PHP]
  - Kacper Rowinski [jsonRPCClient] (<krowinski@implix.com>)

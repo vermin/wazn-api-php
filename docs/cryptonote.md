@@ -186,14 +186,14 @@ Return: `<Boolean>`
 
 #### `encode_address`
 
-Create a valid base58 encoded WAZN address from public keys
+Create a valid base58 encoded Wazn address from public keys
 
 Parameters:
 
  - `$pSpendKey <String>` Public spend key
  - `$pViewKey <String>` Public view key
 
-Return: `<String>` Base58 encoded WAZN address
+Return: `<String>` Base58 encoded Wazn address
 
 [//]: # (TODO example)
 
@@ -209,11 +209,11 @@ Return: `<Boolean>`
 
 #### `decode_address`
 
-Decode a base58 encoded WAZN address
+Decode a base58 encoded Wazn address
 
 Parameters:
 
- - `$address <String>` A base58 encoded WAZN address
+ - `$address <String>` A base58 encoded Wazn address
 
 Return: `<Array>` An array containing the Address network byte, public spend key, and public view key
 [//]: # (TODO example)
@@ -235,12 +235,12 @@ Return: `<String>` Integrated address
 
 #### `address_from_seed`
 
-Derive WAZN address from seed
+Derive Wazn address from seed
 
 Parameters:
 
  - `$hex_seed <String>` Hex string to use as seed
 
-Return: `<String>` A base58 encoded WAZN address
+Return: `<String>` A base58 encoded Wazn address
 
 [//]: # (TODO example)

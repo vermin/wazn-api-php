@@ -37,18 +37,18 @@ $get_info = $daemonRPC->get_info();
 <html>
   <body>
     <h1>
-      <a href="https://github.com/vermin/wazn-api-php" title="WAZN API PHP">
+      <a href="https://github.com/vermin/wazn-api-php" title="Wazn API PHP">
         wazn-api-php
       </a>
     </h1>
-    <p>WAZN API PHP was developed with the intent to create a PHP Library to integrate WAZN into any PHP based code with ease.</p>
+    <p>Wazn API PHP was developed with the intent to create a PHP Library to integrate Wazn into any PHP based code with ease.</p>
 
     <h2><tt></tt>daemonRPC</h2>
     <p><i>Note: not all methods shown, nor all results from each method.</i></p>
     <dl>
       <dt><tt>get_info()</tt></dt>
       <dd>
-        <p>WAZN Network: <tt><?php echo $get_info['nettype']; ?></tt></p>
+        <p>Wazn Network: <tt><?php echo $get_info['nettype']; ?></tt></p>
         <p>White Peers: <tt><?php echo $get_info['white_peerlist_size']; ?></tt></p>
         <p>Grey Peers: <tt><?php echo $get_info['grey_peerlist_size']; ?></tt></p>
         <p>Difficulty: <tt><?php echo $get_info['difficulty']; ?></tt></p>

@@ -35,7 +35,7 @@ class walletRPC
 
   /**
    *
-   * Start a connection with the WAZN wallet RPC interface (wazn-wallet-rpc)
+   * Start a connection with the Wazn wallet RPC interface (wazn-wallet-rpc)
    *
    * @param  string  $host      wazn-wallet-rpc hostname               (optional)
    * @param  int     $port      wazn-wallet-rpc port                   (optional)
@@ -1472,7 +1472,7 @@ class walletRPC
    *     "address": "44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A",
    *     "amount": 10,
    *     "payment_id": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
-   *     "recipient_name": "WAZN Project donation address",
+   *     "recipient_name": "Wazn Project donation address",
    *     "tx_description": "Testing out the make_uri function"
    *   }
    * }
