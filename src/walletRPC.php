@@ -120,7 +120,7 @@ class walletRPC
   public function _transform($amount = 0)
   {
     //
-    return $amount * 1000000000000;
+    return $amount * 1000000000;
   }
 
   /**
